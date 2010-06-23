@@ -18,7 +18,4 @@ integrate_views
 
 
 
-
-
-
 end
