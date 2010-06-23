@@ -42,11 +42,13 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/:action/:id.:format'
 
 
+  map.home '/', :controller => 'pages', :action => 'home'
+
   map.contact '/contact', :controller => 'pages', :action => 'contact'
   map.about   '/about',   :controller => 'pages', :action => 'about'
   map.help    '/help',    :controller => 'pages', :action => 'help'
 
 
-  map.home '/', :controller => 'pages', :action => 'home'
+  map.signup  '/signup',  :controller => 'users', :action => 'new'
 
 end
